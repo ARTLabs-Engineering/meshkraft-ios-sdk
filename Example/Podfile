@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Meshkraft_Example' do
+  pod 'Meshkraft', :path => '../'
+
+  target 'Meshkraft_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
