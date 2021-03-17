@@ -1,0 +1,16 @@
+PODS:
+  - Meshkraft (0.1.0)
+
+DEPENDENCIES:
+  - Meshkraft (from `../`)
+
+EXTERNAL SOURCES:
+  Meshkraft:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Meshkraft: 7b5da35955620a9dacb3126d71dd5a7807cb00e6
+
+PODFILE CHECKSUM: 03f512589af0749a165a2514f072274e18cc41b5
+
+COCOAPODS: 1.10.1

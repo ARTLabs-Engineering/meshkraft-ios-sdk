@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/10302731/Meshkraft'
+  s.homepage         = 'https://github.com/artlabs/Meshkraft'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '10302731' => 'irmakoz@msn.com' }
-  s.source           = { :git => 'https://github.com/10302731/Meshkraft.git', :tag => s.version.to_s }
+  s.author           = { 'artlabs' => 'info@artlabs.ai' }
+  s.source           = { :git => 'https://github.com/artlabs/Meshkraft.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

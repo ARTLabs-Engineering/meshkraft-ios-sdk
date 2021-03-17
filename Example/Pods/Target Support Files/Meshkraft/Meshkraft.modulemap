@@ -1,0 +1,6 @@
+framework module Meshkraft {
+  umbrella header "Meshkraft-umbrella.h"
+
+  export *
+  module * { export * }
+}
