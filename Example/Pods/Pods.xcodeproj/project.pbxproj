@@ -10,13 +10,13 @@
 		00B5DA4080F997F283038D5D428B023F /* Meshkraft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 974F23075A736CA3D4E3C4EF038D3476 /* Meshkraft-dummy.m */; };
 		1C92C8A3FFF48A06736AAD86A5EC7BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1D97F74B7DA4D98F520EFFC65070BFDE /* Pods-Meshkraft_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C78BF873CADB4F7897340D8C662652 /* Pods-Meshkraft_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A924F28281E583136D7179FB7BE8790 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064FC100F59BEE5A0E548B9DB8D4FF33 /* ReplaceMe.swift */; };
 		3E12663EEE5099D5982ECD418DEDF372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		84EAB1BECEB0BAE2B030064DF97C44E2 /* Pods-Meshkraft_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3DCBB6E30BF0D1185A308285A3CA07 /* Pods-Meshkraft_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94F5F4D4987DF4DAB26F98687FF6A46D /* Meshkraft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0EF7B996711E781820BB21E09946D6 /* Meshkraft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED1A13A483CB98BE85B0029BB47E5C3 /* Pods-Meshkraft_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE141009798C6610FF396C14690DCC /* Pods-Meshkraft_Tests-dummy.m */; };
 		C94D50C06A8A3D16518D2C61CC157752 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D408958D2E4CC630836C37F90D3DAAD1 /* Pods-Meshkraft_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864D2BAF325DFBCA01496F3E0160C42 /* Pods-Meshkraft_Example-dummy.m */; };
+		FD894BE82602362000A6A8FF /* Meshkraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD894BE72602362000A6A8FF /* Meshkraft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		064FC100F59BEE5A0E548B9DB8D4FF33 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Meshkraft/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		0864D2BAF325DFBCA01496F3E0160C42 /* Pods-Meshkraft_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meshkraft_Example-dummy.m"; sourceTree = "<group>"; };
 		0968C1DF288DD8161E31E819A1E6AE76 /* Meshkraft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Meshkraft.modulemap; sourceTree = "<group>"; };
 		0DCCD3D77ED61A5F6047E14CC7422F4B /* Pods-Meshkraft_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meshkraft_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		CFB8E65657926CD98A57EB47397C9E70 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D756E50C492C7FCFE21F517736261F15 /* Pods-Meshkraft_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meshkraft_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FA89B06C71BC51FE6866A02C5AF8A748 /* Pods-Meshkraft_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meshkraft_Example.modulemap"; sourceTree = "<group>"; };
+		FD894BE72602362000A6A8FF /* Meshkraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meshkraft.swift; path = Meshkraft/Classes/Meshkraft.swift; sourceTree = "<group>"; };
 		FFED367C9FE5295DAA5391416233A65A /* Pods-Meshkraft_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meshkraft_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,9 +127,9 @@
 		439A5428F240F8A7C436FEBAC10239CF /* Meshkraft */ = {
 			isa = PBXGroup;
 			children = (
-				064FC100F59BEE5A0E548B9DB8D4FF33 /* ReplaceMe.swift */,
 				766A690ACC09729DE8FE06627DD00C80 /* Pod */,
 				337385A26E5AADDAC48EA0BF05CA2C27 /* Support Files */,
+				FD894BE72602362000A6A8FF /* Meshkraft.swift */,
 			);
 			name = Meshkraft;
 			path = ../..;
@@ -384,7 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B5DA4080F997F283038D5D428B023F /* Meshkraft-dummy.m in Sources */,
-				2A924F28281E583136D7179FB7BE8790 /* ReplaceMe.swift in Sources */,
+				FD894BE82602362000A6A8FF /* Meshkraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

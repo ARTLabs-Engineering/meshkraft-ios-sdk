@@ -7,17 +7,38 @@
 //
 
 import UIKit
+import Meshkraft
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MeshkraftDelegate {
 
+    @IBOutlet weak var startARButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    let meshkraft = Meshkraft()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        meshkraft.delegate = self
     }
 
+    @IBAction func startAR(_ sender: UIButton){
+        meshkraft.startARSession(productSKU: "")
+    }
+    
+    func modelLoadStarted() {
+        print("load started")
+        startARButton.isEnabled = false
+        activityIndicator.startAnimating()
+    }
+    
+    func modelLoadFinished() {
+        print("load finished")
+        startARButton.isEnabled = true
+        activityIndicator.stopAnimating()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
