@@ -14,15 +14,14 @@ class ViewController: UIViewController, MeshkraftDelegate {
     @IBOutlet weak var startARButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    let meshkraft = Meshkraft()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        meshkraft.delegate = self
+        Meshkraft.setApiKey("M3QGD6HHBNLRDZQMBP")
+        Meshkraft.meshkraft().delegate = self
     }
 
     @IBAction func startAR(_ sender: UIButton){
-        meshkraft.startARSession(productSKU: "")
+        Meshkraft.meshkraft().startARSession(productSKU: "")
     }
     
     func modelLoadStarted() {

@@ -16,9 +16,20 @@ public protocol MeshkraftDelegate {
 
 public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     
+    static let shared = Meshkraft()
+    static var apiKey = ""
     var modelURL: URL?
     public var delegate : MeshkraftDelegate?
     
+    override init(){}
+    
+    public static func meshkraft() -> Meshkraft{
+        return shared
+    }
+    
+    public static func setApiKey(_ apiKey: String){
+        Meshkraft.apiKey = apiKey
+    }
     public func startARSession(productSKU: String){
         downloadSampleUSDZ()
     }
