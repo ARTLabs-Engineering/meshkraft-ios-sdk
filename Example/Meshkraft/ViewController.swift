@@ -21,7 +21,7 @@ class ViewController: UIViewController, MeshkraftDelegate {
     }
 
     @IBAction func startAR(_ sender: UIButton){
-        Meshkraft.meshkraft().startARSession(productSKU: "")
+        Meshkraft.meshkraft().startARSession(productSKU: "nike-jester")
     }
     
     func modelLoadStarted() {
