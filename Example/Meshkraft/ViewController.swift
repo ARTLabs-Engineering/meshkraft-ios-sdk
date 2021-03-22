@@ -24,6 +24,13 @@ class ViewController: UIViewController, MeshkraftDelegate {
         Meshkraft.meshkraft().startARSession(productSKU: "nike-jester")
     }
     
+    @IBAction func getModelUrl(_ sender: UIButton){
+        Meshkraft.meshkraft().getModelURL(productSKU: "puma", completion: {(modelUrl, errorMessage) in
+            print("modelUrl: \(modelUrl ?? "")")
+            print("errorMessage: \(errorMessage ?? "")")
+        })
+    }
+    
     func modelLoadStarted() {
         print("load started")
         startARButton.isEnabled = false
@@ -32,6 +39,12 @@ class ViewController: UIViewController, MeshkraftDelegate {
     
     func modelLoadFinished() {
         print("load finished")
+        startARButton.isEnabled = true
+        activityIndicator.stopAnimating()
+    }
+    
+    func modelLoadFailed(message: String) {
+        print("load failed message: \(message)")
         startARButton.isEnabled = true
         activityIndicator.stopAnimating()
     }

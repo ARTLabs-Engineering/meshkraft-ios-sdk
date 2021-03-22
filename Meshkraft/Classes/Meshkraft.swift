@@ -11,6 +11,7 @@ import ARKit
 
 public protocol MeshkraftDelegate {
     func modelLoadStarted()
+    func modelLoadFailed(message: String)
     func modelLoadFinished()
 }
 
@@ -30,43 +31,84 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     public static func setApiKey(_ apiKey: String){
         Meshkraft.apiKey = apiKey
     }
+    
+    public static func isARSupported() -> Bool {
+        guard #available(iOS 11.0, *) else {
+            return false
+        }
+        return ARConfiguration.isSupported
+    }
+    
     public func startARSession(productSKU: String){
         delegate?.modelLoadStarted()
-        self.getModelURL(productSKU: productSKU, completion: {(modelUrl) in
-            if let modelUrl = modelUrl, let url = URL(string: modelUrl) {
-                self.downloadUSDZFile(url: url, finished: {() in
+        if !Meshkraft.isARSupported() {
+            delegate?.modelLoadFailed(message: "AR is not supported on this device.")
+            return
+        }
+        self.getModelURL(productSKU: productSKU, completion: {(modelUrl, errorMessage) in
+            if let message = errorMessage {
+                DispatchQueue.main.async {
+                    self.delegate?.modelLoadFailed(message: message)
+                }
+            } else if let modelUrl = modelUrl, let url = URL(string: modelUrl) {
+                self.downloadUSDZFile(url: url, completion: {(errorMessage) in
                     DispatchQueue.main.async {
-                        self.presentAR()
-                        self.delegate?.modelLoadFinished()
+                        if let message = errorMessage {
+                            self.delegate?.modelLoadFailed(message: message)
+                        } else {
+                            self.presentAR()
+                            self.delegate?.modelLoadFinished()
+                        }
                     }
                 })
             }
         })
     }
     
-    public func getModelURL(productSKU: String, completion: @escaping (_ modelUrl: String?) -> Void) {
+    public func getModelURL(productSKU: String, completion: @escaping (_ modelUrl: String?, _ errorMessage: String?) -> Void) {
         if let url = URL(string: "https://staging.api.artlabs.ai/secure/product/" + productSKU) {
         var request = URLRequest(url: url)
         request.setValue(Meshkraft.apiKey, forHTTPHeaderField: "x-api-key")
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                var errorMessage: String? = nil
+                if let error = error{
+                    errorMessage = "Error: \(error)"
+                }
+                if let httpResponse = response as? HTTPURLResponse {
+                    errorMessage = self.getHttpErrorMessage(statusCode: httpResponse.statusCode)
+                }
+                if errorMessage != nil {
+                    completion(nil, errorMessage)
+                    return
+                }
                 guard let data = data else {
-                    print("No data")
+                    completion(nil, "No data received")
                     return
                 }
                 guard let product = try? JSONDecoder().decode(MeshkraftProduct.self, from: data) else {
-                    print("Error: Couldn't decode data")
+                    completion(nil, "Couldn't decode data")
                     return
                 }
-                print(product.name)
                 if let productModel = product.models.first(where: { $0.file.ext == ".usdz" }) {
-                    completion(productModel.file.url)
+                    completion(productModel.file.url, nil)
                 }
             }
             task.resume()
         }
     }
     
-    func downloadUSDZFile(url: URL, finished: @escaping () -> Void) {
+    func getHttpErrorMessage(statusCode: Int) -> String? {
+        if statusCode == 401 {
+            return "Please check your API key"
+        } else if statusCode == 404 {
+            return "Product not found"
+        }else if statusCode != 200 {
+            return "Response error - code: \(statusCode)"
+        }
+        return nil
+    }
+    
+    func downloadUSDZFile(url: URL, completion: @escaping (_ errorMessage: String?) -> Void) {
         let downloadTask = URLSession.shared.downloadTask(with: url) { [self] urlOrNil, responseOrNil, errorOrNil in
             guard let fileURL = urlOrNil else { return }
             do {
@@ -79,9 +121,9 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
                 removeFile(fileUrl: savedURL)
                 try FileManager.default.moveItem(at: fileURL, to: savedURL)
                 self.modelURL = savedURL
-                finished()
+                completion(nil)
             } catch {
-                print ("file error: \(error)")
+                completion("File error: \(error)")
             }
         }
         downloadTask.resume()
