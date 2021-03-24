@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Meshkraft
 //
-//  Created by 10302731 on 03/17/2021.
-//  Copyright (c) 2021 10302731. All rights reserved.
+//  Created by ARTLabs
+//  Copyright © 2021 ARTLabs. All rights reserved.
 //
 
 import UIKit
@@ -13,19 +13,25 @@ class ViewController: UIViewController, MeshkraftDelegate {
 
     @IBOutlet weak var startARButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var skuTextField: UITextField!
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Meshkraft.setApiKey("M3QGD6HHBNLRDZQMBP")
         Meshkraft.meshkraft().delegate = self
     }
 
     @IBAction func startAR(_ sender: UIButton){
-        Meshkraft.meshkraft().startARSession(productSKU: "nike-jester")
+        errorMessageLabel.isHidden = true
+        if let sku = skuTextField.text, !sku.isEmpty {
+            Meshkraft.meshkraft().startARSession(productSKU: sku)
+        } else {
+            Meshkraft.meshkraft().startARSession(productSKU: "nike-jester")
+        }
     }
     
     @IBAction func getModelUrl(_ sender: UIButton){
-        Meshkraft.meshkraft().getModelURL(productSKU: "puma", completion: {(modelUrl, errorMessage) in
+        Meshkraft.meshkraft().getModelURL(productSKU: "nike-jester", completion: {(modelUrl, errorMessage) in
             print("modelUrl: \(modelUrl ?? "")")
             print("errorMessage: \(errorMessage ?? "")")
         })
@@ -47,6 +53,8 @@ class ViewController: UIViewController, MeshkraftDelegate {
         print("load failed message: \(message)")
         startARButton.isEnabled = true
         activityIndicator.stopAnimating()
+        errorMessageLabel.text = message
+        errorMessageLabel.isHidden = false
     }
     
     override func didReceiveMemoryWarning() {

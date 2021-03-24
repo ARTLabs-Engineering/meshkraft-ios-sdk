@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  Meshkraft
 //
-//  Created by 10302731 on 03/17/2021.
-//  Copyright (c) 2021 10302731. All rights reserved.
+//  Created by ARTLabs
+//  Copyright © 2021 ARTLabs. All rights reserved.
 //
 
 import UIKit
+import Meshkraft
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Meshkraft.setApiKey("M3QGD6HHBNLRDZQMBP")
         return true
     }
 

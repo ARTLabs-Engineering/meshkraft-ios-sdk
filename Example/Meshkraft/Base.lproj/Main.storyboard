@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxk-RE-WQT">
-                                <rect key="frame" x="150.5" y="100" width="74" height="30"/>
+                                <rect key="frame" x="150.5" y="164" width="74" height="30"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                 <state key="normal" title="START AR"/>
                                 <connections>
@@ -28,19 +28,39 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="woG-XE-meT">
-                                <rect key="frame" x="177.5" y="194" width="20" height="20"/>
+                                <rect key="frame" x="177.5" y="244" width="20" height="20"/>
                             </activityIndicatorView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nike-jester" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arB-G0-rxk">
+                                <rect key="frame" x="87.5" y="100" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="giY-DS-uVC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ6-Vx-QBc">
+                                <rect key="frame" x="166.5" y="314" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="woG-XE-meT" firstAttribute="top" secondItem="pxk-RE-WQT" secondAttribute="bottom" constant="64" id="58d-bE-t4c"/>
+                            <constraint firstItem="woG-XE-meT" firstAttribute="top" secondItem="pxk-RE-WQT" secondAttribute="bottom" constant="50" id="58d-bE-t4c"/>
                             <constraint firstItem="pxk-RE-WQT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8UP-Ps-XCC"/>
-                            <constraint firstItem="pxk-RE-WQT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="L8a-Lq-9D0"/>
+                            <constraint firstItem="arB-G0-rxk" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PCB-qM-mvl"/>
                             <constraint firstItem="woG-XE-meT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="iD0-F3-Tzu"/>
+                            <constraint firstItem="YZ6-Vx-QBc" firstAttribute="top" secondItem="woG-XE-meT" secondAttribute="bottom" constant="50" id="nQi-Fh-yzr"/>
+                            <constraint firstItem="pxk-RE-WQT" firstAttribute="top" secondItem="arB-G0-rxk" secondAttribute="bottom" constant="30" id="wdF-ob-UXi"/>
+                            <constraint firstItem="arB-G0-rxk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="wnL-zw-d2a"/>
+                            <constraint firstItem="YZ6-Vx-QBc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="y9w-ZU-Zrl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="woG-XE-meT" id="Ssd-3B-D3E"/>
+                        <outlet property="errorMessageLabel" destination="YZ6-Vx-QBc" id="81t-yX-Fkk"/>
+                        <outlet property="skuTextField" destination="arB-G0-rxk" id="lqF-Xf-eUE"/>
                         <outlet property="startARButton" destination="pxk-RE-WQT" id="cSr-YR-KTh"/>
                     </connections>
                 </viewController>
