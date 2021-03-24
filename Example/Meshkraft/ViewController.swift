@@ -18,6 +18,7 @@ class ViewController: UIViewController, MeshkraftDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Meshkraft.setTestMode(true)
         Meshkraft.meshkraft().delegate = self
     }
 

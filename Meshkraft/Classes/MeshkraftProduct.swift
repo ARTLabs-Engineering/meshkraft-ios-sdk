@@ -8,13 +8,13 @@
 import Foundation
 
 struct MeshkraftProduct: Decodable {
-    let category: String
-    let name: String
+    let category: String?
+    let name: String?
     let models: [Model]
     
     struct Model: Decodable {
-        let status: String
-        let name: String
+        let status: String?
+        let name: String?
         let file: File
         
         struct File: Decodable {
