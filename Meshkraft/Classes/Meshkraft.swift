@@ -2,7 +2,8 @@
 //  Meshkraft.swift
 //  Meshkraft
 //
-//  Created by Irmak Ozonay on 17.03.2021.
+//  Created by ARTLabs
+//  Copyright © 2021 ARTLabs. All rights reserved.
 //
 
 import Foundation
@@ -51,7 +52,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
                     self.delegate?.modelLoadFailed(message: message)
                 }
             } else if let modelUrl = modelUrl, let url = URL(string: modelUrl) {
-                self.downloadUSDZFile(url: url, completion: {(errorMessage) in
+                self.downloadFile(url: url, completion: {(errorMessage) in
                     DispatchQueue.main.async {
                         if let message = errorMessage {
                             self.delegate?.modelLoadFailed(message: message)
@@ -108,7 +109,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
         return nil
     }
     
-    func downloadUSDZFile(url: URL, completion: @escaping (_ errorMessage: String?) -> Void) {
+    func downloadFile(url: URL, completion: @escaping (_ errorMessage: String?) -> Void) {
         let downloadTask = URLSession.shared.downloadTask(with: url) { [self] urlOrNil, responseOrNil, errorOrNil in
             guard let fileURL = urlOrNil else { return }
             do {
