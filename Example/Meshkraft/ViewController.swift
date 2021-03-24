@@ -9,7 +9,7 @@
 import UIKit
 import Meshkraft
 
-class ViewController: UIViewController, MeshkraftDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet weak var startARButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -18,7 +18,6 @@ class ViewController: UIViewController, MeshkraftDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Meshkraft.setTestMode(true)
         Meshkraft.meshkraft().delegate = self
     }
 
@@ -27,16 +26,24 @@ class ViewController: UIViewController, MeshkraftDelegate {
         if let sku = skuTextField.text, !sku.isEmpty {
             Meshkraft.meshkraft().startARSession(productSKU: sku)
         } else {
-            Meshkraft.meshkraft().startARSession(productSKU: "nike-jester")
+            Meshkraft.meshkraft().startARSession(productSKU: "YOUR_PRODUCT_SKU")
         }
     }
     
     @IBAction func getModelUrl(_ sender: UIButton){
-        Meshkraft.meshkraft().getModelURL(productSKU: "nike-jester", completion: {(modelUrl, errorMessage) in
+        Meshkraft.meshkraft().getModelURL(productSKU: "YOUR_PRODUCT_SKU", completion: {(modelUrl, errorMessage) in
             print("modelUrl: \(modelUrl ?? "")")
             print("errorMessage: \(errorMessage ?? "")")
         })
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+}
+
+extension ViewController: MeshkraftDelegate {
     
     func modelLoadStarted() {
         print("load started")
@@ -58,9 +65,5 @@ class ViewController: UIViewController, MeshkraftDelegate {
         errorMessageView.isHidden = false
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }
 
