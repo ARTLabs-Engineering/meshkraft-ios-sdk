@@ -21,6 +21,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     static let shared = Meshkraft()
     static var apiKey = ""
     var modelURL: URL?
+    static var testing = false
     public var delegate : MeshkraftDelegate?
     
     override init(){}
@@ -31,6 +32,10 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     
     public static func setApiKey(_ apiKey: String){
         Meshkraft.apiKey = apiKey
+    }
+    
+    public static func setTestMode(_ testing: Bool){
+        self.testing = testing
     }
     
     public static func isARSupported() -> Bool {
@@ -67,8 +72,9 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     }
     
     public func getModelURL(productSKU: String, completion: @escaping (_ modelUrl: String?, _ errorMessage: String?) -> Void) {
-        if let url = URL(string: "https://staging.api.artlabs.ai/secure/product/" + productSKU) {
+        if let url = URL(string: "https://" + (Meshkraft.testing ? "staging." : "") + "api.artlabs.ai/secure/product/" + productSKU) {
         var request = URLRequest(url: url)
+            print(url)
         request.setValue(Meshkraft.apiKey, forHTTPHeaderField: "x-api-key")
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 var errorMessage: String? = nil
