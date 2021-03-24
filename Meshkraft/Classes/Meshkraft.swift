@@ -72,7 +72,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     }
     
     public func getModelURL(productSKU: String, completion: @escaping (_ modelUrl: String?, _ errorMessage: String?) -> Void) {
-        if let url = URL(string: "https://" + (Meshkraft.testing ? "staging." : "") + "api.artlabs.ai/secure/product/" + productSKU) {
+        if let url = URL(string: "https://" + (Meshkraft.testing ? "staging." : "") + "api.artlabs.ai/product/" + productSKU) {
         var request = URLRequest(url: url)
             print(url)
         request.setValue(Meshkraft.apiKey, forHTTPHeaderField: "x-api-key")
