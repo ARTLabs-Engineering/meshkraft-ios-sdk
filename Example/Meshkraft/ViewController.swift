@@ -14,7 +14,7 @@ class ViewController: UIViewController, MeshkraftDelegate {
     @IBOutlet weak var startARButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var skuTextField: UITextField!
-    @IBOutlet weak var errorMessageLabel: UILabel!
+    @IBOutlet weak var errorMessageView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController, MeshkraftDelegate {
     }
 
     @IBAction func startAR(_ sender: UIButton){
-        errorMessageLabel.isHidden = true
+        errorMessageView.isHidden = true
         if let sku = skuTextField.text, !sku.isEmpty {
             Meshkraft.meshkraft().startARSession(productSKU: sku)
         } else {
@@ -53,8 +53,8 @@ class ViewController: UIViewController, MeshkraftDelegate {
         print("load failed message: \(message)")
         startARButton.isEnabled = true
         activityIndicator.stopAnimating()
-        errorMessageLabel.text = message
-        errorMessageLabel.isHidden = false
+        errorMessageView.text = message
+        errorMessageView.isHidden = false
     }
     
     override func didReceiveMemoryWarning() {

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,35 +39,48 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ6-Vx-QBc">
-                                <rect key="frame" x="166.5" y="314" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l9n-4C-zyJ">
+                                <rect key="frame" x="36" y="314" width="303" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Pcw-Je-8RO"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="woG-XE-meT" firstAttribute="top" secondItem="pxk-RE-WQT" secondAttribute="bottom" constant="50" id="58d-bE-t4c"/>
                             <constraint firstItem="pxk-RE-WQT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8UP-Ps-XCC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l9n-4C-zyJ" secondAttribute="trailing" constant="20" id="ACm-wx-2Gr"/>
                             <constraint firstItem="arB-G0-rxk" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PCB-qM-mvl"/>
+                            <constraint firstItem="l9n-4C-zyJ" firstAttribute="top" secondItem="woG-XE-meT" secondAttribute="bottom" constant="50" id="PsX-by-zPx"/>
+                            <constraint firstItem="l9n-4C-zyJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="fTE-H5-qvH"/>
                             <constraint firstItem="woG-XE-meT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="iD0-F3-Tzu"/>
-                            <constraint firstItem="YZ6-Vx-QBc" firstAttribute="top" secondItem="woG-XE-meT" secondAttribute="bottom" constant="50" id="nQi-Fh-yzr"/>
                             <constraint firstItem="pxk-RE-WQT" firstAttribute="top" secondItem="arB-G0-rxk" secondAttribute="bottom" constant="30" id="wdF-ob-UXi"/>
                             <constraint firstItem="arB-G0-rxk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="wnL-zw-d2a"/>
-                            <constraint firstItem="YZ6-Vx-QBc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="y9w-ZU-Zrl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="woG-XE-meT" id="Ssd-3B-D3E"/>
-                        <outlet property="errorMessageLabel" destination="YZ6-Vx-QBc" id="81t-yX-Fkk"/>
+                        <outlet property="errorMessageView" destination="l9n-4C-zyJ" id="7kL-Em-JA0"/>
                         <outlet property="skuTextField" destination="arB-G0-rxk" id="lqF-Xf-eUE"/>
                         <outlet property="startARButton" destination="pxk-RE-WQT" id="cSr-YR-KTh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
