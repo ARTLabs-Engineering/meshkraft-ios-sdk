@@ -32,6 +32,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     
     public static func setApiKey(_ apiKey: String){
         Meshkraft.apiKey = apiKey
+        MeshkraftStat.sdkInit()
     }
     
     public static func setTestMode(_ testing: Bool){
@@ -51,6 +52,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
             delegate?.modelLoadFailed(message: "AR is not supported on this device.")
             return
         }
+        MeshkraftStat.startARSession(productSKU: productSKU)
         self.getModelURL(productSKU: productSKU, completion: {(modelUrl, errorMessage) in
             if let message = errorMessage {
                 DispatchQueue.main.async {

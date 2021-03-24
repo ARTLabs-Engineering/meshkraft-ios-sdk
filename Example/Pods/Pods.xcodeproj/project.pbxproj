@@ -18,6 +18,7 @@
 		D408958D2E4CC630836C37F90D3DAAD1 /* Pods-Meshkraft_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864D2BAF325DFBCA01496F3E0160C42 /* Pods-Meshkraft_Example-dummy.m */; };
 		FD894BE82602362000A6A8FF /* Meshkraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD894BE72602362000A6A8FF /* Meshkraft.swift */; };
 		FD894C4C26048FC500A6A8FF /* MeshkraftProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD894C4B26048FC500A6A8FF /* MeshkraftProduct.swift */; };
+		FD8C2267260B833300915D48 /* MeshkraftStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8C2266260B833300915D48 /* MeshkraftStat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		FA89B06C71BC51FE6866A02C5AF8A748 /* Pods-Meshkraft_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meshkraft_Example.modulemap"; sourceTree = "<group>"; };
 		FD894BE72602362000A6A8FF /* Meshkraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meshkraft.swift; path = Meshkraft/Classes/Meshkraft.swift; sourceTree = "<group>"; };
 		FD894C4B26048FC500A6A8FF /* MeshkraftProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeshkraftProduct.swift; path = Meshkraft/Classes/MeshkraftProduct.swift; sourceTree = "<group>"; };
+		FD8C2266260B833300915D48 /* MeshkraftStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeshkraftStat.swift; path = Meshkraft/Classes/MeshkraftStat.swift; sourceTree = "<group>"; };
 		FFED367C9FE5295DAA5391416233A65A /* Pods-Meshkraft_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meshkraft_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				337385A26E5AADDAC48EA0BF05CA2C27 /* Support Files */,
 				FD894BE72602362000A6A8FF /* Meshkraft.swift */,
 				FD894C4B26048FC500A6A8FF /* MeshkraftProduct.swift */,
+				FD8C2266260B833300915D48 /* MeshkraftStat.swift */,
 			);
 			name = Meshkraft;
 			path = ../..;
@@ -389,6 +392,7 @@
 				00B5DA4080F997F283038D5D428B023F /* Meshkraft-dummy.m in Sources */,
 				FD894BE82602362000A6A8FF /* Meshkraft.swift in Sources */,
 				FD894C4C26048FC500A6A8FF /* MeshkraftProduct.swift in Sources */,
+				FD8C2267260B833300915D48 /* MeshkraftStat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
