@@ -1,5 +1,9 @@
 # Meshkraft
 
+[![Version](https://img.shields.io/cocoapods/v/Meshkraft.svg?style=flat)](https://cocoapods.org/pods/Meshkraft)
+[![License](https://img.shields.io/cocoapods/l/Meshkraft.svg?style=flat)](https://cocoapods.org/pods/Meshkraft)
+[![Platform](https://img.shields.io/cocoapods/p/Meshkraft.svg?style=flat)](https://cocoapods.org/pods/Meshkraft)
+
 ART Labs introduces tailor-made AR-commerce. A specially designed, effortless, 3D-powered boost for eCommerce.
 
 ## Installation
