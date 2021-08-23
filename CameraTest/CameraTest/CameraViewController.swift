@@ -95,25 +95,25 @@ class CameraViewController: UIViewController {
         self.focusView = FocusIndicatorView(frame: .zero)
 
         // buttons
-        self.recordButton = UIImageView(image: UIImage(named: "record_button"))
-        self.longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGestureRecognizer(_:)))
-        if let recordButton = self.recordButton,
-            let longPressGestureRecognizer = self.longPressGestureRecognizer {
-            recordButton.isUserInteractionEnabled = true
-            recordButton.sizeToFit()
-
-            longPressGestureRecognizer.delegate = self
-            longPressGestureRecognizer.minimumPressDuration = 0.05
-            longPressGestureRecognizer.allowableMovement = 10.0
-            recordButton.addGestureRecognizer(longPressGestureRecognizer)
-        }
-        
-//        self.recordButton = UIButton(type: .custom)
-//        if let recordButton = self.recordButton {
-//            recordButton.setImage(UIImage(named: "record_button"), for: .normal)
+//        self.recordButton = UIImageView(image: UIImage(named: "record_button"))
+//        self.longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGestureRecognizer(_:)))
+//        if let recordButton = self.recordButton,
+//            let longPressGestureRecognizer = self.longPressGestureRecognizer {
+//            recordButton.isUserInteractionEnabled = true
 //            recordButton.sizeToFit()
-//            recordButton.addTarget(self, action: #selector(pressed), for: .touchUpInside)
+//
+//            longPressGestureRecognizer.delegate = self
+//            longPressGestureRecognizer.minimumPressDuration = 0.05
+//            longPressGestureRecognizer.allowableMovement = 10.0
+//            recordButton.addGestureRecognizer(longPressGestureRecognizer)
 //        }
+        
+        self.recordButton = UIButton(type: .custom)
+        if let recordButton = self.recordButton {
+            recordButton.setImage(UIImage(named: "record_button"), for: .normal)
+            recordButton.sizeToFit()
+            recordButton.addTarget(self, action: #selector(pressed), for: .touchUpInside)
+        }
         self.flipButton = UIButton(type: .custom)
         if let flipButton = self.flipButton {
             flipButton.setImage(UIImage(named: "flip_button"), for: .normal)
@@ -190,17 +190,17 @@ class CameraViewController: UIViewController {
         nextLevel.metadataObjectTypes = [AVMetadataObject.ObjectType.face, AVMetadataObject.ObjectType.qr]
     }
     
-//    @objc func pressed() {
-//        print("pressed")
-//        NextLevel.shared.capturePhoto()
-//    }
+    @objc func pressed() {
+        print("pressed")
+        NextLevel.shared.capturePhoto()
+    }
     
     func startNextLevelSession() {
         if NextLevel.authorizationStatus(forMediaType: AVMediaType.video) == .authorized &&
            NextLevel.authorizationStatus(forMediaType: AVMediaType.audio) == .authorized {
             do {
                 try NextLevel.shared.start()
-//                NextLevel.shared.captureMode = .photo
+                NextLevel.shared.captureMode = .photo
             } catch {
                 print("NextLevel, failed to start camera session")
             }
