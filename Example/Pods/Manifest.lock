@@ -1,5 +1,5 @@
 PODS:
-  - Meshkraft (0.1.0)
+  - Meshkraft (0.1.2)
 
 DEPENDENCIES:
   - Meshkraft (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Meshkraft: 7b5da35955620a9dacb3126d71dd5a7807cb00e6
+  Meshkraft: 2e83a8bba12e67e5a4e18f3852240d6311c09511
 
 PODFILE CHECKSUM: 03f512589af0749a165a2514f072274e18cc41b5
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.3

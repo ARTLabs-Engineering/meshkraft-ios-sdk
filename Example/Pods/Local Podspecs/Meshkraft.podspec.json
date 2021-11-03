@@ -1,22 +1,24 @@
 {
   "name": "Meshkraft",
-  "version": "0.1.0",
-  "summary": "A short description of Meshkraft.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/10302731/Meshkraft",
+  "version": "0.1.2",
+  "summary": "Meshkraft iOS SDK",
+  "description": "Meshkraft SDK allows any app to connect to Meshkraft platform and start AR sessions in just few lines",
+  "homepage": "https://artlabs.ai/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "10302731": "irmakoz@msn.com"
+    "ARTLabs": "engineering@artlabs.ai"
   },
   "source": {
-    "git": "https://github.com/10302731/Meshkraft.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/ARTLabs-Engineering/meshkraft-ios-sdk.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Meshkraft/Classes/**/*"
+  "swift_versions": "4.0",
+  "source_files": "Meshkraft/Classes/**/*",
+  "swift_version": "4.0"
 }

@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Meshkraft
 
-Copyright (c) 2021 10302731 <irmakoz@msn.com>
+Copyright (c) 2021 ARTLabs <engineering@artlabs.ai>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -92,13 +92,14 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
                     completion(nil, "No data received")
                     return
                 }
+                
                 guard let product = try? JSONDecoder().decode(MeshkraftProduct.self, from: data) else {
                     completion(nil, "Couldn't decode data")
                     return
                 }
-                if let productModel = product.models.first(where: { $0.file.ext == ".usdz" }) {
-                    completion(productModel.file.url, nil)
-                }
+                
+                completion(product.assets.usdz.url, nil)
+                
             }
             task.resume()
         }

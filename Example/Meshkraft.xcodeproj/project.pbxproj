@@ -212,12 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = A5C24K5A7U;
+						DevelopmentTeam = WH8A4J3W6N;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = A5C24K5A7U;
+						DevelopmentTeam = WH8A4J3W6N;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -480,7 +480,7 @@
 			baseConfigurationReference = 154403F96876BD9E000B4D4C /* Pods-Meshkraft_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A5C24K5A7U;
+				DEVELOPMENT_TEAM = WH8A4J3W6N;
 				INFOPLIST_FILE = Meshkraft/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -496,7 +496,7 @@
 			baseConfigurationReference = D002737DCCAAC8BCCA47DB51 /* Pods-Meshkraft_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A5C24K5A7U;
+				DEVELOPMENT_TEAM = WH8A4J3W6N;
 				INFOPLIST_FILE = Meshkraft/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -511,7 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB4F1C37CD00836294E8DB7D /* Pods-Meshkraft_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = A5C24K5A7U;
+				DEVELOPMENT_TEAM = WH8A4J3W6N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,7 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D3A1310C8461AE0E26A913F /* Pods-Meshkraft_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = A5C24K5A7U;
+				DEVELOPMENT_TEAM = WH8A4J3W6N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

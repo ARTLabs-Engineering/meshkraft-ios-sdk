@@ -10,16 +10,17 @@ import Foundation
 struct MeshkraftProduct: Decodable {
     let category: String?
     let name: String?
-    let models: [Model]
+    let assets: Asset
     
-    struct Model: Decodable {
-        let status: String?
-        let name: String?
-        let file: File
+    
+    struct Asset: Decodable {
+        let glb: AssetObject
+        let usdz: AssetObject
         
-        struct File: Decodable {
-            let ext: String
+        struct AssetObject: Decodable {
+            let size: Double
             let url: String
         }
     }
+    
 }
