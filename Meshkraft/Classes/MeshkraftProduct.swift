@@ -8,10 +8,8 @@
 import Foundation
 
 struct MeshkraftProduct: Decodable {
-    let category: String?
     let name: String?
     let assets: Asset
-    
     
     struct Asset: Decodable {
         let glb: AssetObject
