@@ -12,6 +12,7 @@ import Meshkraft
 class ViewController: UIViewController {
 
     @IBOutlet weak var startARButton: UIButton!
+    @IBOutlet weak var startVTOButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var skuTextField: UITextField!
     @IBOutlet weak var errorMessageView: UITextView!
@@ -26,12 +27,20 @@ class ViewController: UIViewController {
         if let sku = skuTextField.text, !sku.isEmpty {
             Meshkraft.meshkraft().startARSession(productSKU: sku)
         } else {
-            Meshkraft.meshkraft().startARSession(productSKU: "YOUR_PRODUCT_SKU")
+            Meshkraft.meshkraft().startARSession(productSKU: "YOUR_SKU")
+        }
+    }
+    @IBAction func startVTO(_ sender: UIButton) {
+        errorMessageView.isHidden = true
+        if let sku = skuTextField.text, !sku.isEmpty {
+            Meshkraft.meshkraft().startVTOSession(productSKU: sku)
+        } else {
+            Meshkraft.meshkraft().startVTOSession(productSKU: "YOUR_SKU")
         }
     }
     
     @IBAction func getModelUrl(_ sender: UIButton){
-        Meshkraft.meshkraft().getModelURL(productSKU: "YOUR_PRODUCT_SKU", completion: {(modelUrl, errorMessage) in
+        Meshkraft.meshkraft().getModelURL(productSKU: "YOUR_SKU", completion: {(modelUrl, errorMessage) in
             print("modelUrl: \(modelUrl ?? "")")
             print("errorMessage: \(errorMessage ?? "")")
         })

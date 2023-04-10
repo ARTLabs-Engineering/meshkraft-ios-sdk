@@ -1,6 +1,6 @@
 {
   "name": "Meshkraft",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "summary": "Meshkraft iOS SDK",
   "description": "Meshkraft SDK allows any app to connect to Meshkraft platform and start AR sessions in just few lines",
   "homepage": "https://artlabs.ai/",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ARTLabs-Engineering/meshkraft-ios-sdk.git",
-    "tag": "0.1.2"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"

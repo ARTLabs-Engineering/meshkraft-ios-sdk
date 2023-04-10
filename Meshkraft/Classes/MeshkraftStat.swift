@@ -30,6 +30,10 @@ class MeshkraftStat : NSObject {
         sendStat(MeshkraftEvent(key: "AR_SESSION_START", segmentation: MeshkraftEvent.Segmentation(sku: productSKU)))
     }
     
+    static func startVTOSession(productSKU: String){
+        sendStat(MeshkraftEvent(key: "VTO_SESSION_START", segmentation: MeshkraftEvent.Segmentation(sku: productSKU)))
+    }
+    
     static func getModelURL(productSKU: String){
         sendStat(MeshkraftEvent(key: "RETURN_MODEL", segmentation: MeshkraftEvent.Segmentation(sku: productSKU)))
     }

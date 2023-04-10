@@ -9,6 +9,7 @@
 import Foundation
 import QuickLook
 import ARKit
+import WebKit
 
 public protocol MeshkraftDelegate: AnyObject {
     func modelLoadStarted()
@@ -71,6 +72,14 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
                 })
             }
         })
+    }
+    
+    public func startVTOSession(productSKU: String) {
+        let viewController = VTOWebViewController(productSKU: productSKU, apiKey: Meshkraft.apiKey)
+        MeshkraftStat.startVTOSession(productSKU: productSKU)
+        if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
+            rootVC.present(viewController, animated: true, completion: nil)
+        }
     }
     
     public func getModelURL(productSKU: String, completion: @escaping (_ modelUrl: String?, _ errorMessage: String?) -> Void) {
@@ -161,4 +170,43 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
         return url as QLPreviewItem
     }
     
+}
+
+class VTOWebViewController: UIViewController, WKNavigationDelegate {
+    private var webView: WKWebView!
+    private let productSKU: String
+    private let apiKey: String
+
+    init(productSKU: String, apiKey: String) {
+        self.productSKU = productSKU
+        self.apiKey = apiKey
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webConfiguration.ignoresViewportScaleLimits = true
+        webConfiguration.suppressesIncrementalRendering = true
+        webConfiguration.allowsInlineMediaPlayback = true
+        webConfiguration.allowsAirPlayForMediaPlayback = false
+        webConfiguration.allowsPictureInPictureMediaPlayback = false
+        webConfiguration.mediaTypesRequiringUserActionForPlayback = .audio
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+
+        webView.navigationDelegate = self
+        view = webView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let urlString = "https://viewer.artlabs.ai/embed/vto?sku=\(productSKU)&token=\(apiKey)"
+        if let url = URL(string: urlString) {
+            webView.load(URLRequest(url: url))
+            webView.allowsBackForwardNavigationGestures = true
+        }
+    }
 }

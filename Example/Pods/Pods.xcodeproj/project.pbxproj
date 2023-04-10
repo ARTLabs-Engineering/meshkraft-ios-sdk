@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3FB21EBBE38624F323089398F16420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		135D3EA6C24FE693617C5224D12CB0FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		36563B31092C5A64065F50F59584E4EC /* Meshkraft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F0CFF050B93E78936241028EA02A20 /* Meshkraft-dummy.m */; };
-		45ACFCA237294DC243CFAB0143653A4E /* Pods-Meshkraft_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864D2BAF325DFBCA01496F3E0160C42 /* Pods-Meshkraft_Example-dummy.m */; };
-		6E4586CAE6D1108124508DCDF51CC79D /* Pods-Meshkraft_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE141009798C6610FF396C14690DCC /* Pods-Meshkraft_Tests-dummy.m */; };
-		95227E1B9F391DC8B75EC38AE772BA14 /* MeshkraftProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD23218845504684864D5FEB50BDEEB7 /* MeshkraftProduct.swift */; };
-		9D73F879B81EB2B42364F5E89434336E /* Pods-Meshkraft_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C78BF873CADB4F7897340D8C662652 /* Pods-Meshkraft_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9BEB56CB46E47A6432E427B4D397578 /* Meshkraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3248969F8570A8CC06CEFC4567E5286 /* Meshkraft.swift */; };
-		AA6DCC4A219A81B4E65154D5D7697E6D /* MeshkraftStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8917D8B86DD7A5152F0BC26048D66A /* MeshkraftStat.swift */; };
-		D1EE4382165067D90DD9291FA374CD95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D6D8E7EA7E57822761EFBA69C0571EC1 /* Pods-Meshkraft_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3DCBB6E30BF0D1185A308285A3CA07 /* Pods-Meshkraft_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E952398115475504E888BCA05EDC5158 /* Meshkraft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7285AC2B3204249104FCC3D3CC33A2C /* Meshkraft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34F08E002284BBDF97E91508267D26B3 /* Meshkraft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7285AC2B3204249104FCC3D3CC33A2C /* Meshkraft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B10449224E5C63FA008542E03ED1706 /* MeshkraftProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD23218845504684864D5FEB50BDEEB7 /* MeshkraftProduct.swift */; };
+		69EBB8B7174C2649CF09A8BE505EA770 /* Pods-Meshkraft_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE141009798C6610FF396C14690DCC /* Pods-Meshkraft_Tests-dummy.m */; };
+		7E7DAD90CF52C9E9FD6EF5FD199477AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		93B60BEC0B1AC1667E99CA166F0A49F8 /* MeshkraftStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8917D8B86DD7A5152F0BC26048D66A /* MeshkraftStat.swift */; };
+		9905C4ECD94F47110AE64FAFCBD88792 /* Pods-Meshkraft_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864D2BAF325DFBCA01496F3E0160C42 /* Pods-Meshkraft_Example-dummy.m */; };
+		A17A82A14A4DC7F310A7E24266FFB6FF /* Pods-Meshkraft_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C78BF873CADB4F7897340D8C662652 /* Pods-Meshkraft_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4D3C0747F8D495C4AC4E3FB897007A8 /* Meshkraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3248969F8570A8CC06CEFC4567E5286 /* Meshkraft.swift */; };
+		BAA7257E1428A1B36B3F57D9FCEB591C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C6CEB1B34176CE5F088A2ED975061417 /* Pods-Meshkraft_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3DCBB6E30BF0D1185A308285A3CA07 /* Pods-Meshkraft_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC27640BFFAACEEAF4BAC57F22A01135 /* Meshkraft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F0CFF050B93E78936241028EA02A20 /* Meshkraft-dummy.m */; };
+		CF70BC6D1D9ADBE833872386DFA0BC5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C620D987E4452B11280386AB46CBCED4 /* PBXContainerItemProxy */ = {
+		8A69CFAAEFE0A21CB456BC9B3F1F0A7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BB9505576D751883B0F75154995C3825;
 			remoteInfo = Meshkraft;
 		};
-		CD6A238607801A9EE815F9FFC20421A2 /* PBXContainerItemProxy */ = {
+		D13F9F8798EF7A20A89BA818D0BE9809 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -44,10 +44,9 @@
 		090F727D9A2D5618A7C3802632C43555 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0DCCD3D77ED61A5F6047E14CC7422F4B /* Pods-Meshkraft_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meshkraft_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		13C78BF873CADB4F7897340D8C662652 /* Pods-Meshkraft_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meshkraft_Example-umbrella.h"; sourceTree = "<group>"; };
-		2D9F2294718F044B843B491F4BEF78AE /* Meshkraft.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Meshkraft.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		2D9F2294718F044B843B491F4BEF78AE /* Meshkraft.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Meshkraft.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2FA738D442DA9167D25E612DA38D30D8 /* Meshkraft-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Meshkraft-Info.plist"; sourceTree = "<group>"; };
 		30A32D00949F691A8DC9B1F71EF5E4E6 /* Pods-Meshkraft_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meshkraft_Tests-Info.plist"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3C07037EB8B0C65237F7FF37ADDFE418 /* Meshkraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Meshkraft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE141009798C6610FF396C14690DCC /* Pods-Meshkraft_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meshkraft_Tests-dummy.m"; sourceTree = "<group>"; };
 		5A6B5368CCC2F84A63345FCB03576C4B /* Pods-Meshkraft_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meshkraft_Example-Info.plist"; sourceTree = "<group>"; };
@@ -56,7 +55,8 @@
 		6D3DCBB6E30BF0D1185A308285A3CA07 /* Pods-Meshkraft_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meshkraft_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6F8917D8B86DD7A5152F0BC26048D66A /* MeshkraftStat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshkraftStat.swift; path = Meshkraft/Classes/MeshkraftStat.swift; sourceTree = "<group>"; };
 		70ED43D7F5215AA2E35CD5B9FD3E16C5 /* Pods-Meshkraft_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meshkraft_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7691193A321CC44D816B0AB3529A74B1 /* Pods_Meshkraft_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meshkraft_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7691193A321CC44D816B0AB3529A74B1 /* Pods-Meshkraft_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Meshkraft_Tests"; path = Pods_Meshkraft_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EEC094DFB5FEDE1BDA8B5BDBA4D6FA2 /* Pods-Meshkraft_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meshkraft_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8B127DEC9D17AB0A7D5CAB5329D50D44 /* Pods-Meshkraft_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meshkraft_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CEFAB1B4C2CC1F9174E63594F72B9B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		B3248969F8570A8CC06CEFC4567E5286 /* Meshkraft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Meshkraft.swift; path = Meshkraft/Classes/Meshkraft.swift; sourceTree = "<group>"; };
 		B8695444366989EB83A5590907DB27AD /* Meshkraft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Meshkraft.debug.xcconfig; sourceTree = "<group>"; };
 		C0ECEFAB0BFDA39F64BA0377CC2081AA /* Pods-Meshkraft_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meshkraft_Tests.modulemap"; sourceTree = "<group>"; };
-		C6A2D24BF1F9613664110042903508B7 /* Pods_Meshkraft_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meshkraft_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A2D24BF1F9613664110042903508B7 /* Pods-Meshkraft_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Meshkraft_Example"; path = Pods_Meshkraft_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D756E50C492C7FCFE21F517736261F15 /* Pods-Meshkraft_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meshkraft_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DD23218845504684864D5FEB50BDEEB7 /* MeshkraftProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshkraftProduct.swift; path = Meshkraft/Classes/MeshkraftProduct.swift; sourceTree = "<group>"; };
 		E2BFB1AC0ACC29A7AFD0553E7F48B260 /* Meshkraft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Meshkraft.release.xcconfig; sourceTree = "<group>"; };
@@ -77,27 +77,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A61D1C0D6717B8B4125A524587A2D48 /* Frameworks */ = {
+		00B14C7F3E9E4B351C12882D9942F3A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3FB21EBBE38624F323089398F16420 /* Foundation.framework in Frameworks */,
+				CF70BC6D1D9ADBE833872386DFA0BC5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A98CAE3DD6EE096E0FB14E191CF8746 /* Frameworks */ = {
+		09D532A2F9622152F78DC7B0A334849B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135D3EA6C24FE693617C5224D12CB0FD /* Foundation.framework in Frameworks */,
+				7E7DAD90CF52C9E9FD6EF5FD199477AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98BA3DC7088EE677F8354EB5AF4E2B54 /* Frameworks */ = {
+		17205D094D0E09DD2A778E54D79867FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1EE4382165067D90DD9291FA374CD95 /* Foundation.framework in Frameworks */,
+				BAA7257E1428A1B36B3F57D9FCEB591C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +113,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		811A28B991B5D38332E051B0D6BDF7B5 /* Products */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		86E5A66B4CB1506C8A6B930CB89FA3CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				3C07037EB8B0C65237F7FF37ADDFE418 /* Meshkraft.framework */,
-				C6A2D24BF1F9613664110042903508B7 /* Pods_Meshkraft_Example.framework */,
-				7691193A321CC44D816B0AB3529A74B1 /* Pods_Meshkraft_Tests.framework */,
+				C6A2D24BF1F9613664110042903508B7 /* Pods-Meshkraft_Example */,
+				7691193A321CC44D816B0AB3529A74B1 /* Pods-Meshkraft_Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,14 +161,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		C8B6D4A04ED596DD8A0BDF6678F2F15C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +177,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				FBAACB336E92FE14112A4E41DD7A5C08 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				811A28B991B5D38332E051B0D6BDF7B5 /* Products */,
+				86E5A66B4CB1506C8A6B930CB89FA3CC /* Products */,
 				301D744FD36CB197FA93853581D1ABCA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,27 +232,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5E6287B7ADD721448D7E10BF96D5B17E /* Headers */ = {
+		2BB4FDB550E096EE5FE4DC9F4B599581 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D73F879B81EB2B42364F5E89434336E /* Pods-Meshkraft_Example-umbrella.h in Headers */,
+				A17A82A14A4DC7F310A7E24266FFB6FF /* Pods-Meshkraft_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		946E3BAE308AFF068265C5E6091FCB33 /* Headers */ = {
+		B6905B3C6668B3A1B434D05E9C00A99F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D8E7EA7E57822761EFBA69C0571EC1 /* Pods-Meshkraft_Tests-umbrella.h in Headers */,
+				34F08E002284BBDF97E91508267D26B3 /* Meshkraft-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F2C6C48EAE999B6B66135458F80C37 /* Headers */ = {
+		FFED96404DA0789C9FB0A979F0E4641E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E952398115475504E888BCA05EDC5158 /* Meshkraft-umbrella.h in Headers */,
+				C6CEB1B34176CE5F088A2ED975061417 /* Pods-Meshkraft_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,50 +261,50 @@
 /* Begin PBXNativeTarget section */
 		0781E6C602BC5D1A64942927F5C864A8 /* Pods-Meshkraft_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4145F2B910073210F30C849A796A124E /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Example" */;
+			buildConfigurationList = DE284BE0E6E3AC6DDF3D699DD7C85944 /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Example" */;
 			buildPhases = (
-				5E6287B7ADD721448D7E10BF96D5B17E /* Headers */,
-				C386F2DD9379CCBFE275BEA57B1CD21F /* Sources */,
-				6A98CAE3DD6EE096E0FB14E191CF8746 /* Frameworks */,
-				F45056504E216CFF796AE7838D12D2BA /* Resources */,
+				2BB4FDB550E096EE5FE4DC9F4B599581 /* Headers */,
+				819E5977DAD1F394C5F3DB4D53DFC185 /* Sources */,
+				09D532A2F9622152F78DC7B0A334849B /* Frameworks */,
+				986C333A6504CE4843B66C4DDBA70E19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2C0564DA6963788F01440094B03D8884 /* PBXTargetDependency */,
+				506408FDB5EFD0B532C17C6AE869650A /* PBXTargetDependency */,
 			);
 			name = "Pods-Meshkraft_Example";
-			productName = "Pods-Meshkraft_Example";
-			productReference = C6A2D24BF1F9613664110042903508B7 /* Pods_Meshkraft_Example.framework */;
+			productName = Pods_Meshkraft_Example;
+			productReference = C6A2D24BF1F9613664110042903508B7 /* Pods-Meshkraft_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		696F21A843B52EA9ABAEE0B7E35F96B3 /* Pods-Meshkraft_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB832FD6DD8BCF508D7A6796014A7DD1 /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Tests" */;
+			buildConfigurationList = 8BD23E507E15FDAAC84F8601D8416202 /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Tests" */;
 			buildPhases = (
-				946E3BAE308AFF068265C5E6091FCB33 /* Headers */,
-				F2CAC4BBD0D5BD128C51F6863D97C927 /* Sources */,
-				98BA3DC7088EE677F8354EB5AF4E2B54 /* Frameworks */,
-				80A4176D3E5AC424A564AF662FF98BA5 /* Resources */,
+				FFED96404DA0789C9FB0A979F0E4641E /* Headers */,
+				484BB3083C2243EAFA77D4A75E3C5ADC /* Sources */,
+				00B14C7F3E9E4B351C12882D9942F3A2 /* Frameworks */,
+				0A0AB17F084B3EEB4C02BAC7A718D33E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				09F30630D8D85F2CA375566356D99098 /* PBXTargetDependency */,
+				A3ABF91F0EE4B557F531307BBEDB3C57 /* PBXTargetDependency */,
 			);
 			name = "Pods-Meshkraft_Tests";
-			productName = "Pods-Meshkraft_Tests";
-			productReference = 7691193A321CC44D816B0AB3529A74B1 /* Pods_Meshkraft_Tests.framework */;
+			productName = Pods_Meshkraft_Tests;
+			productReference = 7691193A321CC44D816B0AB3529A74B1 /* Pods-Meshkraft_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		BB9505576D751883B0F75154995C3825 /* Meshkraft */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B768CC0C00D2BB479BD70E75945263B /* Build configuration list for PBXNativeTarget "Meshkraft" */;
+			buildConfigurationList = 55EC4646F68F9A9D0AB42EB773F01713 /* Build configuration list for PBXNativeTarget "Meshkraft" */;
 			buildPhases = (
-				C9F2C6C48EAE999B6B66135458F80C37 /* Headers */,
-				96B8B9A012ADA0B6D9AC85AD33E5779E /* Sources */,
-				5A61D1C0D6717B8B4125A524587A2D48 /* Frameworks */,
-				F407E98BAC15DEE7C9481739EC899EF9 /* Resources */,
+				B6905B3C6668B3A1B434D05E9C00A99F /* Headers */,
+				B28EDEF5E83C30B9301CDF66A5DF0DBF /* Sources */,
+				17205D094D0E09DD2A778E54D79867FF /* Frameworks */,
+				5775505E35E577DE41167B5F36856E99 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -321,19 +321,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 811A28B991B5D38332E051B0D6BDF7B5 /* Products */;
+			productRefGroup = 86E5A66B4CB1506C8A6B930CB89FA3CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -345,21 +345,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		80A4176D3E5AC424A564AF662FF98BA5 /* Resources */ = {
+		0A0AB17F084B3EEB4C02BAC7A718D33E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F407E98BAC15DEE7C9481739EC899EF9 /* Resources */ = {
+		5775505E35E577DE41167B5F36856E99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F45056504E216CFF796AE7838D12D2BA /* Resources */ = {
+		986C333A6504CE4843B66C4DDBA70E19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,91 +369,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		96B8B9A012ADA0B6D9AC85AD33E5779E /* Sources */ = {
+		484BB3083C2243EAFA77D4A75E3C5ADC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36563B31092C5A64065F50F59584E4EC /* Meshkraft-dummy.m in Sources */,
-				A9BEB56CB46E47A6432E427B4D397578 /* Meshkraft.swift in Sources */,
-				95227E1B9F391DC8B75EC38AE772BA14 /* MeshkraftProduct.swift in Sources */,
-				AA6DCC4A219A81B4E65154D5D7697E6D /* MeshkraftStat.swift in Sources */,
+				69EBB8B7174C2649CF09A8BE505EA770 /* Pods-Meshkraft_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C386F2DD9379CCBFE275BEA57B1CD21F /* Sources */ = {
+		819E5977DAD1F394C5F3DB4D53DFC185 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45ACFCA237294DC243CFAB0143653A4E /* Pods-Meshkraft_Example-dummy.m in Sources */,
+				9905C4ECD94F47110AE64FAFCBD88792 /* Pods-Meshkraft_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2CAC4BBD0D5BD128C51F6863D97C927 /* Sources */ = {
+		B28EDEF5E83C30B9301CDF66A5DF0DBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4586CAE6D1108124508DCDF51CC79D /* Pods-Meshkraft_Tests-dummy.m in Sources */,
+				A4D3C0747F8D495C4AC4E3FB897007A8 /* Meshkraft.swift in Sources */,
+				CC27640BFFAACEEAF4BAC57F22A01135 /* Meshkraft-dummy.m in Sources */,
+				3B10449224E5C63FA008542E03ED1706 /* MeshkraftProduct.swift in Sources */,
+				93B60BEC0B1AC1667E99CA166F0A49F8 /* MeshkraftStat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09F30630D8D85F2CA375566356D99098 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Meshkraft_Example";
-			target = 0781E6C602BC5D1A64942927F5C864A8 /* Pods-Meshkraft_Example */;
-			targetProxy = CD6A238607801A9EE815F9FFC20421A2 /* PBXContainerItemProxy */;
-		};
-		2C0564DA6963788F01440094B03D8884 /* PBXTargetDependency */ = {
+		506408FDB5EFD0B532C17C6AE869650A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Meshkraft;
 			target = BB9505576D751883B0F75154995C3825 /* Meshkraft */;
-			targetProxy = C620D987E4452B11280386AB46CBCED4 /* PBXContainerItemProxy */;
+			targetProxy = 8A69CFAAEFE0A21CB456BC9B3F1F0A7A /* PBXContainerItemProxy */;
+		};
+		A3ABF91F0EE4B557F531307BBEDB3C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Meshkraft_Example";
+			target = 0781E6C602BC5D1A64942927F5C864A8 /* Pods-Meshkraft_Example */;
+			targetProxy = D13F9F8798EF7A20A89BA818D0BE9809 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		405D07C3D377C3789EEE642FF0A3E76D /* Release */ = {
+		1845EC6E1CAAFF6DA11B9BDB2A14935C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B127DEC9D17AB0A7D5CAB5329D50D44 /* Pods-Meshkraft_Tests.release.xcconfig */;
+			baseConfigurationReference = 7EEC094DFB5FEDE1BDA8B5BDBA4D6FA2 /* Pods-Meshkraft_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Meshkraft_Tests/Pods-Meshkraft_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meshkraft_Tests/Pods-Meshkraft_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4F6231081FBC44B694CF7C508E172CE8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D020E96694FC21E889FFCF0D594B10C /* Pods-Meshkraft_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -464,7 +431,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Meshkraft_Example/Pods-Meshkraft_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Meshkraft_Example/Pods-Meshkraft_Example.modulemap";
@@ -476,18 +443,18 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		6B089B1827AFC848C7CB43D10B311776 /* Debug */ = {
+		1DFDEDBFEA21D7952E4479702C6D375A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0DCCD3D77ED61A5F6047E14CC7422F4B /* Pods-Meshkraft_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -498,7 +465,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Meshkraft_Tests/Pods-Meshkraft_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Meshkraft_Tests/Pods-Meshkraft_Tests.modulemap";
@@ -515,10 +482,46 @@
 			};
 			name = Debug;
 		};
-		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+		35CAA153A15DB0D54411A7FDFD21D226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B127DEC9D17AB0A7D5CAB5329D50D44 /* Pods-Meshkraft_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meshkraft_Tests/Pods-Meshkraft_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meshkraft_Tests/Pods-Meshkraft_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -541,6 +544,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -563,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,10 +578,46 @@
 			};
 			name = Release;
 		};
-		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+		951DF3BE5839DD1F6BFFF3B6377DFE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D020E96694FC21E889FFCF0D594B10C /* Pods-Meshkraft_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meshkraft_Example/Pods-Meshkraft_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meshkraft_Example/Pods-Meshkraft_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -600,6 +640,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -625,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -638,44 +679,11 @@
 			};
 			name = Debug;
 		};
-		C12336E3A47DE6DEDC4CCA7F1C03AF9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EEC094DFB5FEDE1BDA8B5BDBA4D6FA2 /* Pods-Meshkraft_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Meshkraft_Example/Pods-Meshkraft_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meshkraft_Example/Pods-Meshkraft_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E9CC85AD5E3458E15A3A0FB02DBA8BA8 /* Debug */ = {
+		EE4E2B81DFA1DA7EFB87BF07FEDCE24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8695444366989EB83A5590907DB27AD /* Meshkraft.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -687,7 +695,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Meshkraft/Meshkraft-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Meshkraft/Meshkraft-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Meshkraft/Meshkraft.modulemap";
 				PRODUCT_MODULE_NAME = Meshkraft;
@@ -702,11 +710,11 @@
 			};
 			name = Debug;
 		};
-		F54D7DB41245556281A2C58C373F2AC3 /* Release */ = {
+		FD8BC393052D372355BA86B379780A3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2BFB1AC0ACC29A7AFD0553E7F48B260 /* Meshkraft.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -718,7 +726,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Meshkraft/Meshkraft-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Meshkraft/Meshkraft-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Meshkraft/Meshkraft.modulemap";
 				PRODUCT_MODULE_NAME = Meshkraft;
@@ -737,38 +745,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B768CC0C00D2BB479BD70E75945263B /* Build configuration list for PBXNativeTarget "Meshkraft" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9CC85AD5E3458E15A3A0FB02DBA8BA8 /* Debug */,
-				F54D7DB41245556281A2C58C373F2AC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4145F2B910073210F30C849A796A124E /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C12336E3A47DE6DEDC4CCA7F1C03AF9A /* Debug */,
-				4F6231081FBC44B694CF7C508E172CE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				916E0404255105F480DC4950B7625F7A /* Debug */,
-				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB832FD6DD8BCF508D7A6796014A7DD1 /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Tests" */ = {
+		55EC4646F68F9A9D0AB42EB773F01713 /* Build configuration list for PBXNativeTarget "Meshkraft" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B089B1827AFC848C7CB43D10B311776 /* Debug */,
-				405D07C3D377C3789EEE642FF0A3E76D /* Release */,
+				EE4E2B81DFA1DA7EFB87BF07FEDCE24E /* Debug */,
+				FD8BC393052D372355BA86B379780A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD23E507E15FDAAC84F8601D8416202 /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DFDEDBFEA21D7952E4479702C6D375A /* Debug */,
+				35CAA153A15DB0D54411A7FDFD21D226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE284BE0E6E3AC6DDF3D699DD7C85944 /* Build configuration list for PBXNativeTarget "Pods-Meshkraft_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1845EC6E1CAAFF6DA11B9BDB2A14935C /* Debug */,
+				951DF3BE5839DD1F6BFFF3B6377DFE4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

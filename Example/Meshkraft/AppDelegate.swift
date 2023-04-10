@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Meshkraft.setApiKey("phTzrnocCq2bFfWAbtz8CFxuCAXvfVyaK3VrCeJpUD")
+        Meshkraft.setApiKey("API_KEY")
         return true
     }
 
