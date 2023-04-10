@@ -10,7 +10,7 @@ import Foundation
 import QuickLook
 import ARKit
 
-public protocol MeshkraftDelegate {
+public protocol MeshkraftDelegate: AnyObject {
     func modelLoadStarted()
     func modelLoadFailed(message: String)
     func modelLoadFinished()
@@ -22,7 +22,7 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     static var apiKey = ""
     var modelURL: URL?
     static var testing = false
-    public var delegate : MeshkraftDelegate?
+    public weak var delegate: MeshkraftDelegate?
     
     override init(){}
     
