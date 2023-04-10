@@ -10,6 +10,7 @@ import Foundation
 import QuickLook
 import ARKit
 import WebKit
+import UIKit
 
 public protocol MeshkraftDelegate: AnyObject {
     func modelLoadStarted()
@@ -172,8 +173,8 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     
 }
 
-class VTOWebViewController: UIViewController, WKNavigationDelegate {
-    private var webView: WKWebView!
+class VTOWebViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
+    var webView: WKWebView!
     private let productSKU: String
     private let apiKey: String
 
@@ -188,15 +189,19 @@ class VTOWebViewController: UIViewController, WKNavigationDelegate {
     }
 
     override func loadView() {
+        let contentController = WKUserContentController()
+        contentController.add(self, name: "close-event")
+
         let webConfiguration = WKWebViewConfiguration()
+        webConfiguration.userContentController = contentController
         webConfiguration.ignoresViewportScaleLimits = true
         webConfiguration.suppressesIncrementalRendering = true
         webConfiguration.allowsInlineMediaPlayback = true
         webConfiguration.allowsAirPlayForMediaPlayback = false
         webConfiguration.allowsPictureInPictureMediaPlayback = false
         webConfiguration.mediaTypesRequiringUserActionForPlayback = .audio
+        
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
-
         webView.navigationDelegate = self
         view = webView
     }
@@ -207,6 +212,22 @@ class VTOWebViewController: UIViewController, WKNavigationDelegate {
         if let url = URL(string: urlString) {
             webView.load(URLRequest(url: url))
             webView.allowsBackForwardNavigationGestures = true
+            
         }
+    }
+
+    // MARK: - WKScriptMessageHandler
+
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if message.name == "close-event" {
+            // Close the WebView
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+
+    // MARK: - Deinit
+
+    deinit {
+        webView.configuration.userContentController.removeScriptMessageHandler(forName: "close-event")
     }
 }

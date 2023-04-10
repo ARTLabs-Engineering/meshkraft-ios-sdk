@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Meshkraft'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Meshkraft iOS SDK'
   s.description      = <<-DESC
   Meshkraft SDK allows any app to connect to Meshkraft platform and start AR sessions in just few lines
