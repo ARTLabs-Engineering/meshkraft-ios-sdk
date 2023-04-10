@@ -190,7 +190,6 @@ class VTOWebViewController: UIViewController, WKNavigationDelegate, WKScriptMess
 
     override func loadView() {
         let contentController = WKUserContentController()
-        contentController.add(self, name: "close-event")
 
         let webConfiguration = WKWebViewConfiguration()
         webConfiguration.userContentController = contentController
@@ -203,6 +202,7 @@ class VTOWebViewController: UIViewController, WKNavigationDelegate, WKScriptMess
         
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
+        webView.configuration.userContentController.add(WeakScriptMessageDelegate(self), name: "close-event")
         view = webView
     }
 
@@ -229,5 +229,19 @@ class VTOWebViewController: UIViewController, WKNavigationDelegate, WKScriptMess
 
     deinit {
         webView.configuration.userContentController.removeScriptMessageHandler(forName: "close-event")
+        webView.navigationDelegate = nil
+    }
+}
+
+class WeakScriptMessageDelegate: NSObject, WKScriptMessageHandler {
+    weak var delegate: WKScriptMessageHandler?
+
+    init(_ delegate: WKScriptMessageHandler) {
+        self.delegate = delegate
+        super.init()
+    }
+
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        delegate?.userContentController(userContentController, didReceive: message)
     }
 }
