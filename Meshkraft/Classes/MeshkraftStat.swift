@@ -1,52 +1,72 @@
+// MeshkraftStat.swift
+// Meshkraft
 //
-//  MeshkraftStat.swift
-//  Meshkraft
-//
-//  Created by Irmak Ozonay on 24.03.2021.
+// Created by Irmak Ozonay on 24.03.2021.
 //
 
 import Foundation
 
-struct MeshkraftEvent: Encodable {
-    let key: String
-    let count = 1
-    let segmentation: Segmentation
+let now = Date()
+let calendar = Calendar.current
+
+struct StatPayload: Encodable {
+    let source = "ar-sdk"
+    let token = Meshkraft.apiKey
+    let event: MeshkraftEvent
+    let device_id = UUID().uuidString
     
-    struct Segmentation: Encodable {
-        let api_key = Meshkraft.apiKey
-        let sku: String?
-        let platform = "iOS"
+    struct MeshkraftEvent: Encodable {
+        let key: String
+        let count = 1
+        let segmentation: Segmentation
+        
+        struct Segmentation: Encodable {
+            let token = Meshkraft.apiKey
+            let sku: String?
+            let platform = "iOS"
+            let dow = calendar.component(.weekday, from: now)
+            let hour = calendar.component(.hour, from: now)
+        }
     }
+    
 }
 
 class MeshkraftStat : NSObject {
     static let sessionId = UUID().uuidString
+    static let eventApiUrl = "https://events.artlabs.ai"
+    static let eventApiKey = "zzkZ58VcHc&xH%#"
     
-    static func sdkInit(){
-        sendStat(MeshkraftEvent(key: "SDK_INIT", segmentation: MeshkraftEvent.Segmentation(sku: nil)))
+    static func sdkInit() {
+        sendStat(StatPayload(event: StatPayload.MeshkraftEvent(key: "INIT", segmentation: StatPayload.MeshkraftEvent.Segmentation(sku: nil))))
     }
     
-    static func startARSession(productSKU: String){
-        sendStat(MeshkraftEvent(key: "AR_SESSION_START", segmentation: MeshkraftEvent.Segmentation(sku: productSKU)))
+    static func startARSession(productSKU: String) {
+        sendStat(StatPayload(event: StatPayload.MeshkraftEvent(key: "START_AR", segmentation: StatPayload.MeshkraftEvent.Segmentation(sku: productSKU))))
     }
     
-    static func startVTOSession(productSKU: String){
-        sendStat(MeshkraftEvent(key: "VTO_SESSION_START", segmentation: MeshkraftEvent.Segmentation(sku: productSKU)))
+    static func getModelURL(productSKU: String) {
+        sendStat(StatPayload(event: StatPayload.MeshkraftEvent(key: "RETURN_MODEL", segmentation: StatPayload.MeshkraftEvent.Segmentation(sku: productSKU))))
     }
     
-    static func getModelURL(productSKU: String){
-        sendStat(MeshkraftEvent(key: "RETURN_MODEL", segmentation: MeshkraftEvent.Segmentation(sku: productSKU)))
-    }
-    
-    static func sendStat(_ event: MeshkraftEvent){
-        guard let eventJsonData = try? JSONEncoder().encode([event]) else { return }
-        guard let eventJson = String(data: eventJsonData, encoding: .utf8) else { return }
-        if let encodedEventJson = eventJson.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
-            let urlString = "https://countly.artlabs.ai/i?app_key=aa62f3a1ade0c9026201c819a6450d5e0edd84f3&device_id=" + sessionId + "&events=" + encodedEventJson
-            if let url = URL(string: urlString) {
-                URLSession.shared.dataTask(with: url).resume()
+    static func sendStat(_ event: StatPayload) {
+        guard let requestData = try? JSONEncoder().encode(event) else { return }
+        
+        let url = URL(string: eventApiUrl)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(eventApiKey, forHTTPHeaderField: "X-Custom-PSK")
+        request.httpBody = requestData
+        
+        if let sentUserAgent = request.value(forHTTPHeaderField: "User-Agent") {
+            print("Sent User-Agent: \(sentUserAgent)")
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                print("MeshkraftAR :: Couldn't send event: \(error.localizedDescription)")
             }
         }
+        task.resume()
     }
-    
 }

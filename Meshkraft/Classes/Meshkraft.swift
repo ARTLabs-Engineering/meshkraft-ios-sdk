@@ -77,7 +77,6 @@ public class Meshkraft : NSObject, QLPreviewControllerDataSource {
     
     public func startVTOSession(productSKU: String) {
         let viewController = VTOWebViewController(productSKU: productSKU, apiKey: Meshkraft.apiKey)
-        MeshkraftStat.startVTOSession(productSKU: productSKU)
         if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
             rootVC.present(viewController, animated: true, completion: nil)
         }
