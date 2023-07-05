@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         if let sku = skuTextField.text, !sku.isEmpty {
             Meshkraft.meshkraft().startARSession(productSKU: sku)
         } else {
-            Meshkraft.meshkraft().startARSession(productSKU: "YOUR_SKU")
+            Meshkraft.meshkraft().startARSession(productSKU: "1127893-RYEP")
         }
     }
     @IBAction func startVTO(_ sender: UIButton) {
@@ -35,12 +35,12 @@ class ViewController: UIViewController {
         if let sku = skuTextField.text, !sku.isEmpty {
             Meshkraft.meshkraft().startVTOSession(productSKU: sku)
         } else {
-            Meshkraft.meshkraft().startVTOSession(productSKU: "YOUR_SKU")
+            Meshkraft.meshkraft().startVTOSession(productSKU: "1127893-RYEP")
         }
     }
     
     @IBAction func getModelUrl(_ sender: UIButton){
-        Meshkraft.meshkraft().getModelURL(productSKU: "YOUR_SKU", completion: {(modelUrl, errorMessage) in
+        Meshkraft.meshkraft().getModelURL(productSKU: "1127893-RYEP", completion: {(modelUrl, errorMessage) in
             print("modelUrl: \(modelUrl ?? "")")
             print("errorMessage: \(errorMessage ?? "")")
         })

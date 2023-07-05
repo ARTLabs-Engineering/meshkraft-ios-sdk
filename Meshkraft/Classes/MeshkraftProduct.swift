@@ -12,7 +12,6 @@ struct MeshkraftProduct: Decodable {
     let assets: Asset
     
     struct Asset: Decodable {
-        let glb: AssetObject
         let usdz: AssetObject
         
         struct AssetObject: Decodable {
