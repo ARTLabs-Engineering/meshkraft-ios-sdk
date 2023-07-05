@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         if let sku = skuTextField.text, !sku.isEmpty {
             Meshkraft.meshkraft().startARSession(productSKU: sku)
         } else {
-            Meshkraft.meshkraft().startARSession(productSKU: "1127893-RYEP")
+            Meshkraft.meshkraft().startARSession(productSKU: "000000400245234")
         }
     }
     @IBAction func startVTO(_ sender: UIButton) {
